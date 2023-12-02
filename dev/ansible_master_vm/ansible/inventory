@@ -1,0 +1,11 @@
+
+## make sure it looks like this
+[master]
+control_machine ansible_connection=local
+
+[servers]
+server1 ansible_host=10.128.0.8
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+

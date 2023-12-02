@@ -1,0 +1,12 @@
+---
+- name: Create test file
+  hosts: all
+  become: yes
+  remote_user: mammenarjun2
+  tasks:
+    - name: Create a file with the text "hi"
+      shell: echo 'yoo' > /home/mammenarjun2/hello.txt
+      register: file_creation_result
+
+    - debug:
+        var: file_creation_result
