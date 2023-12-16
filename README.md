@@ -34,7 +34,7 @@ Terragrunt apply / if required -lock=false
 ```
 
 Once deployed via terragrunt you should be able to ssh onto the master node vm in order 
-to complete the [Ansible](https://docs.ansible.com/) installtion.
+to complete the [Ansible](https://docs.ansible.com/) installation.
 
 *Please note that the startup script on the master node vm might take a couple of minutes to complete!*
 
@@ -55,7 +55,7 @@ ssh-keygen -t rsa -b 4096 -C "user_email@ansible.com"
 cat the ssh pub key 
 ```
 Copy the public key and place it in the project where the dev 
-vm is under in this location on gcp https://console.cloud.google.com/compute/metadata/sshKeys,so that the master node vm can access the dev vm.
+vm is under in this location on gcp https://console.cloud.google.com/compute/metadata/sshKeys, so that the master node vm can access the dev vm.
 
 Head back to the master node vm and lets install Nginx plus test the connection.
 ```sh
@@ -97,7 +97,8 @@ sudo nano touch nginx.yml
 
 ```
 Now you have a playbook that is ready to run with ansible's push method. 
-Simply run the below command with your created user in the master node vm.
+Simply run the below command with your created user in the master node vm to
+push the playbook config to your dev vm.
 
 ```sh
 ansible-playbook -u yourusername --ask-become-pass  nginx.yml
