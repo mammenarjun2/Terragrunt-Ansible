@@ -1,5 +1,0 @@
-ansible-playbook -u mammenarjun2 --ask-become-pass -vvv ./logs.yml - asks password and -vvv shows logs when ran
-ansible all -m ping -u root - test but update to user that is being used for ansible
-ansible all -a "df -h" -u root 
-
-https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-20-04

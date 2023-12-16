@@ -1,16 +1,19 @@
 {
-	"name": "terragrunt_cont",
+	"name": "terragrunt_container",
 	"image": "eu.gcr.io/cts-public-images-1/cts-standard:latest",
 	"remoteUser": "root",
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"burtlo.inspec",
+				"ms-azuretools.vscode-docker",
+				"eamodio.gitlens",
+				"redhat.vscode-yaml",
+				"ms-vsliveshare.vsliveshare",
+				"hashicorp.terraform",
 				"davidanson.vscode-markdownlint",
 				"foxundermoon.shell-format",
-				"hashicorp.terraform",
-				"redhat.vscode-yaml",
-				"samuelcolvin.jinjahtml"
+				"burtlo.inspec",
+				
 			]
 		}
 	},

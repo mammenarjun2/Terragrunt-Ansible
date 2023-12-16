@@ -1,6 +1,7 @@
 variable "name" { type = string }
 variable "machine_type" { type = string }
 variable "disk_type" { type = string }
+variable "assign_public_ip" { type = bool }
 variable "disk_size" { type = number }
 variable "auto_delete" { 
   type = string
@@ -16,11 +17,12 @@ variable "tags" {
   type    = set(string)
   default = ["env","dev"]
 }
-variable "account_id" { type = string }
-variable "display_name" { type = string }
 variable "network" { type = string }
 variable "metadata_startup_script" { type = string }
 variable "project" {
  type = string
- default = "cloudbuild-386914"  
+}
+
+variable "subnetwork" {
+  type = string
 }

@@ -1,11 +1,14 @@
- remote_state{
+ 
+# keeping TF state in a central location
+ 
+ remote_state{ 
   backend = "gcs"
   generate = {
     path      = "backend.tf"
     if_exists = "overwrite"
   } 
   config = {
-    bucket = "tf-state-arj-1"
+    bucket = "tf-state-mgmt"
     prefix = "${path_relative_to_include()}/terraform.tfstate"
   }
  }
