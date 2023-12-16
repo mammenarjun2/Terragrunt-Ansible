@@ -15,7 +15,6 @@ default =  "us-central1-a"
 variable "image" { type = string }
 variable "tags" {
   type    = set(string)
-  default = ["env","dev"]
 }
 variable "network" { type = string }
 variable "metadata_startup_script" { type = string }
