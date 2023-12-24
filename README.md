@@ -11,11 +11,11 @@ essentially helps to keep TF state in one location.
 ### Features 
 
 - Dev container (Terragrunt ready)
-- Terragrunt common.hcl file to manage state
+- Terragrunt common.hcl file to manage state in cenrtal location
 - Ansible installed on master node and serves playbooks to dev vm
 - GCP infra (Compute,VPC,Cloud Nat,Cloud Router,Firewall,VPC Peering and GCS)
 - Networking designed to limit access and only allow ssh in the GCP 
-  console via Identity Aware Proxy (IAP)
+  console via Identity Aware Proxy (IAP)  
 
 Ensure you have access to the projects in GCP you want to deploy this on.
 
